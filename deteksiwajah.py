@@ -16,7 +16,7 @@ for (x,y,w,h) in deteksi_wajah:
 	roi_gray=img_gray[y:y+h,x:x+w]
 	roi_color=img[y:y+h,x:x+w]
 
-cv2.putText(img,"Jumlah wajah ada : "+str(jumlah)+" buah",(10,30),font,1,(0,0,0),2,cv2.LINE_AA)
+cv2.putText(img,"Jumlah wajah ada : "+str(jumlah)+" buah",(10,30),font,1,(0,0,255),2,cv2.LINE_AA)
 cv2.imshow('img',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
